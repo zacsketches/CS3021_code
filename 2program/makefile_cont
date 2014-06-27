@@ -1,0 +1,24 @@
+# basic build for programming assignment 2
+CC=xcrun c++
+CFLAGS=-c 
+#LIB=-stdlib=libc++
+
+#uncomment for desktop build
+#BOOST_FLAG=-I/opt/local/include
+
+#uncomment for laptop build
+BOOST_FLAG=-I/usr/local/boost_1_55_0
+
+all: a_continuity_test
+	
+a_continuity_test: cont_tester.o bignum.o
+	$(CC) cont_tester.o bignum.o -o a_continuity_test
+	
+bignum.o: bignum.cpp
+	$(CC) $(CFLAGS) bignum.cpp
+
+cont_tester.o: cont_tester.cpp
+	$(CC) $(CFLAGS) cont_tester.cpp
+
+clean:
+	rm -rf *.o a_bignum_test a_otani_bignum_test a_continuity_test

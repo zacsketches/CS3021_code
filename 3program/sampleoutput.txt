@@ -1,0 +1,109 @@
+!!!Go MoonDeer!!
+
+TESTING Ordered List with Pet objects
+AFTER INSERT Count: 11
+10
+30
+35
+40
+50
+70
+80
+85
+90
+95
+100
+Scan forward
+10
+30
+35
+40
+50
+70
+80
+85
+90
+95
+100
+Scan backward
+100
+95
+90
+85
+80
+70
+50
+40
+35
+30
+10
+
+
+Check the AT operation
+10
+30
+35
+40
+50
+70
+80
+85
+90
+95
+100
+SCAN after removal of 70, 85, 90, 40: 7
+10
+30
+35
+50
+80
+95
+100
+
+
+TESTING Ordered List with Pet objects
+No of Elements: 9
+[1111, One, 10, 14.5]
+[2222, Two, 12, 25.5]
+[3333, Three, 20, 14.5]
+[4444, Four, 15, 15.5]
+[5555, Five, 12, 13.5]
+[6666, Six, 11, 10.5]
+[7777, Seven, 21, 22.5]
+[8888, Eight, 22, 21.5]
+[9999, Nine, 11, 23.5]
+
+Node at 4 [5555, Five, 12, 13.5]
+Node at 8 [9999, Nine, 11, 23.5]
+Node at 1 [2222, Two, 12, 25.5]
+Node at 0 [1111, One, 10, 14.5]
+
+Scan forward
+[1111, One, 10, 14.5]
+[2222, Two, 12, 25.5]
+[3333, Three, 20, 14.5]
+[4444, Four, 15, 15.5]
+[5555, Five, 12, 13.5]
+[6666, Six, 11, 10.5]
+[7777, Seven, 21, 22.5]
+[8888, Eight, 22, 21.5]
+[9999, Nine, 11, 23.5]
+
+Scan backward
+[9999, Nine, 11, 23.5]
+[8888, Eight, 22, 21.5]
+[7777, Seven, 21, 22.5]
+[6666, Six, 11, 10.5]
+[5555, Five, 12, 13.5]
+[4444, Four, 15, 15.5]
+[3333, Three, 20, 14.5]
+[2222, Two, 12, 25.5]
+[1111, One, 10, 14.5]
+
+After remove 1111, 3333, 5555 : 6
+[2222, Two, 12, 25.5]
+[4444, Four, 15, 15.5]
+[6666, Six, 11, 10.5]
+[7777, Seven, 21, 22.5]
+[8888, Eight, 22, 21.5]
+[9999, Nine, 11, 23.5]

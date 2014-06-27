@@ -1,0 +1,17 @@
+int getHeight(p) {
+	if(p != NULL){
+		x = getHeight(p->left);
+		y = getHeight(p->right);
+		return max(x, y) + 1;
+	} else {
+		return 0;
+	}
+}
+
+depth is how far DOWN from root a node is.
+
+height is how far up from the farthest leaf a node is
+
+pre-order traversal for avgDepth
+
+and post-order traversal for maxHeightDiff
